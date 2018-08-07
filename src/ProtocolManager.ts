@@ -101,7 +101,7 @@ export class ProtocolManager {
             networkName, {
                 connector: {
                     name: 'websockets-streaming-client',
-                    url: this.url || 'https://pmpos-node.herokuapp.com/',
+                    url: this.url || 'https://sambadna-node.herokuapp.com/',
                     maxBufferLength: 500000
                 }
             },

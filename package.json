@@ -1,0 +1,73 @@
+{
+  "name": "sambadna-core",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tslint --project \".\"&&tsc",
+    "lint": "tslint --project \".\"",
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SambaDNA/sambadna-core.git"
+  },
+  "keywords": [
+    "sambadna"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "author": "Emre Eren <emreeren@gmail.com> (sambapos.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/faker": "^4.1.2",
+    "@types/jest": "^23.3.0",
+    "@types/node": "^9.6.23",
+    "@types/shortid": "0.0.29",
+    "expr-eval": "^1.2.2",
+    "immutable": "^4.0.0-rc.9",
+    "jest": "^23.4.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "shortid": "^2.2.12",
+    "ts-jest": "^23.0.1",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^2.9.2",
+    "y-array": "^11.0.0-5",
+    "y-indexeddb": "^9.0.0-6",
+    "y-map": "^11.0.0-1",
+    "y-memory": "^9.0.0-1",
+    "yjs": "^13.0.0-66"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "nools-ts": "^2.3.5",
+    "vanilla-text-mask": "^5.1.1",
+    "y-websockets-streaming-client": "^1.0.24"
+  },
+  "peerDependencies": {
+    "yjs": "^13.0.0-61",
+    "y-array": "^11.0.0-5",
+    "y-indexeddb": "^9.0.0-5",
+    "y-map": "^11.0.0-1",
+    "y-memory": "^9.0.0-1",
+    "immutable": "^4.0.0-rc.9",
+    "lodash": "^4.17.5",
+    "shortid": "^2.2.8",
+    "moment": "^2.22.2"
+  }
+}
